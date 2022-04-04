@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type ="text/javascript" src="jquery-1.2.6.js"></script>
+<script type ="text/javascript" src="script.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="supe.js"></script>
+    <script src="tstjs.js"></script>
+    <script src="color.js"></script>
+</head>
+<body>
+    <div></div>
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-sm-6" style="background-color:rgb(255, 255, 255);">
+        <center><img src="LogoHeader.png" alt="error"></center>
+        </div>
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-3" style="background-color:rgb(255, 255, 255);">
+                    <p><h3>Home</h3></p>
+                </div>
+                <div class="col-sm-3" style="background-color:rgb(255, 255, 255);">
+                    <p><h3>Products</h3></p>
+                </div>
+                <div class="col-sm-3" style="background-color:rgb(255, 255, 255);">
+                    <p><h3>Services</h3></p>
+                </div>
+                <div class="col-sm-3" style="background-color:rgb(255, 255, 255);">
+                    <p><h3>Contact</h3></p>
+                </div>
+        </div>
+    </div>
+</div>
+        <br>
+         
+
+
+        <div class="row" >                    
+            <div class="col-sm-12 slider" >
+                <div class="col-sm-2 arrowleft" style="position:relative;">
+                    <img src="ArrowLeftSlider.png" alt="error">
+                </div>
+                <div class="col-sm-4" style="position:relative;">
+                    <img src="IPhoneSlider.png" alt="error">
+                </div>
+                
+                <div class="col-sm-4 button" style="position:relative;">
+                    <p><h3 style="color: rgb(250, 246, 246);" class="animate__animated animate__bounce">Lorem Ipsum is simply</h3></p>
+                    <p><h4 style="color: rgb(250, 246, 246);">dummy text of the</h4></p>
+                    <p><h4 style="color: rgb(250, 246, 246);">pritting & typesetting</h4></p>
+                    <img src="ButtonHeader.png" alt="error">
+                </div>
+                <div class="col-sm-2 arrowright" style="position:relative;">
+                    <img src="ArrowRightSlider.png" alt="error">
+                </div>
+            </div>
+        </div>
+
+            <br>
+
+ <div class="row">
+    <div class="col-sm-4">
+    <center><img src="Product1.png " /></center>
+ <center> <h3>Contrary to popular</h3>
+        <br>
+        <p>Lorem Ipsum is not simply random text.</p>
+        <br>
+        <p>It has roots in a piece</p></center>
+    </div>
+    <div class="col-sm-4">
+    <center><img src="Product2.png " /></center>
+<center> <h3>Contrary to popular</h3>
+        <br>
+        <p>Lorem Ipsum is not simply random text.</p>
+        <br>
+        <p>It has roots in a piece</p></center>
+    </div>
+    <div class="col-sm-4">
+    <center> <img src="Product3.png " /></center>
+<center><h3>Contrary to popular</h3>
+        <br>
+        <p>Lorem Ipsum is not simply random text.</p>
+        <br>
+        <p>It has roots in a piece</p></center>
+    </div>
+  </div>
+
+  <button onclick="tstjs()">Ознакомиться с информацией</button>
+             <div id="out_rez"></div>
+
+             <div class="row">
+                <!--Begining of the Main Form-->
+                <div class="col-md-8 orderInfo">
+                        <h5>Order information</h5>
+                        <div class="row">
+                            <div class="col-md-3">First Name:</div>
+                            <div class="col-md-3"><input class="form-control" id="first" type="text" onblur="checkFirst();" required /></div>
+                            <div class="col-md-3"><span id="first_Check"></span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">Last Name:</div>
+                            <div class="col-md-3"><input class="form-control" id="last" type="text" onblur="checkLast();" required /></div>
+                            <div class="col-md-3"><span id="last_Check"></span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">Phone number:</div>
+                            <div class="col-md-3"><input class="form-control" id="phone" type="text" onblur="checkPhone();" placeholder="xxx-xxx-xxx" required /></div>
+                            <div class="col-md-3"><span id="phone_Check"></span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">Destination:</div>
+                            <div class="col-md-3"><input class="form-control" id="dest" type="text" onblur="checkDest();" required /></div>
+                            <div class="col-md-3"><span id="dest_Check"></span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">Date and Time:</div>
+                            <div class="col-md-3">
+                                <input class="form-control" id="date" type="date" required />
+                                <input class="form-control" id="time" type="time" required />
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                        <form>
+                            <input type="button" value="Отправить!" onClick='location.href="sait.html"'>
+                            </form> 
+                            <div class = "but-color">
+                                <button class="button-blue" 
+                            <button onclick="color()">Ознакомиться с информацией</button>
+             <div id="out_col"></div> 
+                            </button> 
+                            </div>            
+                </div>
+                <!--End of the form-->
+
+<div class="page">
+    <button class="button" onclick="changeColor();">Click</button>
+</div>
+
+<script src="app.js"></script>
+
+                    <div class="row" > 
+                    <div class="col-sm-6" style="background-color:rgb(255, 255, 255);">
+                        <p> <center><h3>The Shopping cart</h3></center> </p>
+                        <br>
+                    <div class = "korz">
+                    <center><img src="ShoppingCart.png" alt="error"></center>
+                    </div>
+                        </div>
+                        <div class="col-sm-6" style="background-color:rgb(255, 255, 255);">
+                        <p><h3>Some Bullet text here</h3></p>
+                        <br>
+                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                         <br>
+                         <p>Lorem Ipsum has been the industry's standard dummy text ever</p>
+                         <br>
+                         <p>When an unknown printer took a galley of type and scrambled</p>
+                         <br>
+                         <p>It to make a type specimen book. It has survived not only five centuries</p>
+                         <br>
+                         <p>But also the leap into electronic typesetting,</p>
+                         <br>
+                         <p>Remaining essentially unchanged. It was popularised</p>
+                         <br>
+                         <p>The release of Letraset sheets containing Lorem Ipsum passages</p>
+                        </div>
+                    </div>
+                        <br>
+                        
+                        <p> <center>Copyright © 2012-2013</center></p>
+        </div>
+</body>
+</html>
